@@ -212,6 +212,18 @@ body {
   font-size: 34px;
 }
 
+.btn svg {
+  display: block;
+  width: 0.72em;
+  height: 0.72em;
+  margin: 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .btn-eq {
   background: var(--color-tiger-gold);
   color: var(--color-charred-clove);
