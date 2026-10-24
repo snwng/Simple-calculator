@@ -197,6 +197,11 @@ body {
   min-height: 52px;
 }
 
+.btn-ac {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+
 .btn-num {
   font-family: var(--font-salmond);
   font-weight: 500;
