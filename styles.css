@@ -190,7 +190,7 @@ body {
 
 .aux .btn {
   height: 40px;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.02em;
 }
 
@@ -210,13 +210,13 @@ body {
 .btn-op {
   font-family: var(--font-salmond);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .btn-eq {
   font-family: var(--font-salmond);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 30px;
   background: var(--color-tiger-gold);
   color: var(--color-charred-clove);
   border-color: var(--color-tiger-gold);
