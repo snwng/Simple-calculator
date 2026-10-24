@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="simple_calc — a vanilla HTML/CSS/JS calculator with keyboard support and true operator precedence.">
+  <meta name="theme-color" content="#823513">
+  <title>SIMPLE CALC — Hungry Tiger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+  <header class="masthead">
+    <p class="eyebrow">Vanilla · No framework · No build</p>
+    <h1 class="brand">SIMPLE CALC</h1>
+  </header>
+  <hr class="rule">
+  <section class="calc" aria-label="Calculator">
+    <div class="screen" role="status" aria-live="polite" aria-label="Calculator display">
+      <div class="expr" id="expr"></div>
+      <div class="value" id="value">0</div>
+      <p class="hint">Keys · digits . + − × ÷ ( ) % · Enter · Backspace · Esc</p>
+    </div>
+    <div class="pad">
+      <div class="aux">
+        <button class="btn" type="button" data-k="lp" aria-label="Open parenthesis">(</button>
+        <button class="btn" type="button" data-k="rp" aria-label="Close parenthesis">)</button>
+        <button class="btn" type="button" data-k="pct" aria-label="Percent">%</button>
+      </div>
+      <div class="keys">
+        <button class="btn btn-ac" type="button" data-k="clear" aria-label="All clear">AC</button>
+        <button class="btn" type="button" data-k="back" aria-label="Backspace">⌫</button>
+        <button class="btn" type="button" data-k="negate" aria-label="Toggle sign">±</button>
+        <button class="btn btn-op" type="button" data-k="op" data-v="÷" aria-label="Divide">÷</button>
+
+        <button class="btn btn-num" type="button" data-k="digit" data-v="7">7</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="8">8</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="9">9</button>
+        <button class="btn btn-op" type="button" data-k="op" data-v="×" aria-label="Multiply">×</button>
+
+        <button class="btn btn-num" type="button" data-k="digit" data-v="4">4</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="5">5</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="6">6</button>
+        <button class="btn btn-op" type="button" data-k="op" data-v="−" aria-label="Subtract">−</button>
+
+        <button class="btn btn-num" type="button" data-k="digit" data-v="1">1</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="2">2</button>
+        <button class="btn btn-num" type="button" data-k="digit" data-v="3">3</button>
+        <button class="btn btn-op" type="button" data-k="op" data-v="+" aria-label="Add">+</button>
+
+        <button class="btn btn-num span2" type="button" data-k="digit" data-v="0">0</button>
+        <button class="btn btn-num" type="button" data-k="dot" aria-label="Decimal point">.</button>
+        <button class="btn btn-eq" type="button" data-k="equals" aria-label="Equals">=</button>
+      </div>
+    </div>
+  </section>
+  <p class="colophon">Gold on rust · Precedence-correct evaluator</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
