@@ -2,6 +2,8 @@
 
 A calculator UI with true operator precedence, built entirely in vanilla HTML, CSS, and JavaScript — no frameworks, no build step, no dependencies.
 
+**Live demo:** https://snwng.github.io/Simple-calculator/
+
 ## Overview
 
 The engine is a pure tokenizer plus a shunting-yard evaluator compiled to RPN, so expressions are evaluated correctly rather than via `eval()`:
